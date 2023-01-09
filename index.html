@@ -13,21 +13,26 @@
     <link href="css/section.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/tasks.css" rel="stylesheet">
+    <link href="css/buttons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <script defer src="js/script.js"> </script>
+    <script src="js/script.js" defer> </script>
+    </head>
 
 <body>
     <main class="container">
         <header>
             <h1>Lista zadań</h1>
         </header>
+
         <section class="section">
-            <h2 class="section__header">Dodaj nowe zadanie </h2>
+            <header class="section__header">
+                <h2 class="section__title">Dodaj nowe zadanie </h2>
+            </header>
             <div class="section__body">
                 <form class="form js-form">
                     <input class="form__input js-newTask" placeholder="Co jest do zrobienia ?">
@@ -36,7 +41,10 @@
             </div>
         </section>
         <section class="section">
-            <h2 class="section__header">Lista zadań</h2>
+            <header class="section__header">
+                <h2 class="section__title">Lista zadań</h2>
+                <div class="buttons js-buttons"></div>
+            </header>
             <div class="section__body">
                 <ul class="tasks js-tasks"></ul>
             </div>
