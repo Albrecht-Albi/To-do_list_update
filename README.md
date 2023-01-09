@@ -1,5 +1,5 @@
 # To-do list
-![Shopping list image](https://github.com/Albrecht-Albi/To-do_list_update/blob/main/images/to-do_list.jpg)
+![Shopping list image](https://github.com/Albrecht-Albi/To-do_list_update/blob/main/images/to-do_list.png)
 
 ## Hello everyone !
 This is my simple to-do list update app.
