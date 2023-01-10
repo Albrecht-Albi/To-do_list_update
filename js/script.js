@@ -2,7 +2,7 @@
     const welcome = () => {
         console.log("Hello everyone")
     };
-    
+
     let tasks = [];
     let hideDoneTasks = false;
 
@@ -67,15 +67,15 @@
     const renderTasks = () => {
         const taskToHTML = task => `
           <li class= "tasks__item${task.done && hideDoneTasks ? " tasks__item--hidden" : ""}" js-task>
-          <button class= "tasks__button tasks__button--toggleDone js-toggleDone">
-              ${task.done ? "✔" : ""}
+                <button class= "tasks__button tasks__button--toggleDone js-toggleDone">
+                 ${task.done ? "✔" : ""}
           </button>
           <span class="tasks__content${task.done ? " tasks__content--done" : ""}">
           ${task.content}
           </span>
           <button class="tasks__button tasks__button--remove js-remove">
             🗑
-          </button>
+                </button>
           </li>
           `;
 
@@ -95,8 +95,10 @@
             <button class="buttons__button js-toggleHideDoneTasks">
                 ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
             </button>
-            <button class="buttons__button js-markAllDone"
-                ${tasks.every(({ done }) => done) ? " disabled" : ""}>
+            <button 
+                class="buttons__button js-markAllDone"
+                ${tasks.every(({ done }) => done) ? " disabled" : ""}
+            >
               Ukończ wszystkie 
             </button>
             `;
